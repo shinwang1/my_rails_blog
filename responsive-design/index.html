@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width" content="initial-scale=1">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Responsive Design and Fluid Layouts</title>
+</head>
+<body>
+
+  <div id="wrapper">
+
+    <div id="header">
+      HEADER with some other stuff written along the top
+    </div>
+
+    <div id="container">
+      <div id="side-a">
+         <ul>
+          <li><a href="#"> Home </a></li>
+          <li><a href="#"> Profile </a></li>
+          <li><a href="#"> Stuff </a></li>
+          <li><a href="#"> Pictures </a></li>
+        </ul>
+      </div>
+
+    <div id="content">
+      <img src='http://placekitten.com/g/800/300'>
+      <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.
+
+        Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+      </p>
+
+      <img src='http://placekitten.com/g/800/300'>
+      <p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion sorrel courgette turnip greens tigernut soybean radish artichoke wattle seed endive groundnut broccoli arugula.
+      </p>
+
+    </div>
+
+  </div>
+
+  <div id="footer">
+    FOOTER
+  </div>
+
+  <div class="reflection">
+    <h3>Reponsive Web Design</h3>
+    <p>
+    With this exercise, I learned about Responsive Web Design from <a href="http://www.egeekmedia.com.au/responsive-web-design/">Tim Cole</a>.
+    The following are the three major steps:</p>
+
+    <p>Step 1: Set a meta viewport tag</p>
+
+    <p>&lt head &gt</p>
+      <p>&lt meta name&quot=viewport&quot content=&quotwidth=device-width&quot content=&quotinitial-scale=1&quot &gt </p>
+    <p> &lt /head &gt </p>
+
+    Step 2: Create a flexible layout / fluid grid
+
+    Setup your site and your asset to re-size on their own according to the browser width.
+    <ul>
+      <li>Flexible Containers</li>
+      <li>Flexible Type</li>
+      <li>Flexible Margins and Padding</li>
+      <li>Flexible Images</li>
+    </ul>
+
+    <p>
+    Step 3: Use Media Queries in your CSS file(s)
+    In terms of responsive design, using media queries is like assigning different stylesheets based on browser window size.
+
+    It means you can style your website at various browser widths (such as for mobile or tablet), all in the same CSS file.
+    </p>
+
+    <p>
+      The trickest part to figure out was Step 3. While other wrappers and sections needed minor changes for certain effects to take place,
+      the media queries didn't seem straight forward at first. I was able to find counter examples where the unordered list is laid out
+      horizontally in a bigger display while they stack vertically when the display changes to a mobile screen. It took many trial and errors
+      to see how the CSS attributes had its effects on the displayed material.
+    </p>
+  </div>
+
+
+</body>
+</html>
