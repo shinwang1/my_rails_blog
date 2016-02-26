@@ -2,44 +2,57 @@
 <html>
 
   <head>
-  	<title>Shin's Blog</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
+  	<meta charset="UTF-8">
 
-    <a href="projects/tribute-index.html">Project: Bootstrap</a>
-    <a href="responsive-design/index.html">Project: Responsive</a>
-    <a href="#">Resume</a>
-    <img src="imgs/shinlogo.jpg">
-    <a href="#">Contact</a>
-    <a href="#">Blog</a>
-    <br>
+    <title>Shin's Blog</title>
+
   </head>
 
-  <nav>
-    <hr>
-    <span>YOU ARE HERE: HOME<span>
-
-    <span>
-      <a href="https://www.linkedin.com/in/shinwang1">LINKEDIN</a>
-    	<a href="https://www.instagram.com/taperfyco/">INSTAGRAM</a>
-    	<a href="https://twitter.com/xinanagans">TWITTER</a>
-    	<a href="#">RSS</a>
-      <a href="mailto:shinwang3@gmail.com" target="_top">EMAIL</a>
-    </span>
-    <form>
-      Search:<input type="text" name="searchbox">
-    </form>
-    <hr>
-  </nav>
-
-
   <body>
+
+    <header>
+      <img class="logo" src="imgs/shinlogo.jpg">
+      <!--<a href="projects/tribute-index.html">Project: Bootstrap</a>-->
+      <div class="header-a">
+        <div id="short-link">
+          <div id="box1"><a href="responsive-design/index.html">Project: Responsive</a></div>
+          <div id="box2"><a href="#">Resume</a></div>
+          <div id="box3"><a href="#">Contact</a></div>
+          <div id="box4"><a href="blog/blog-template.html">Blog</a></div>
+        </div>
+        <br>
+      </div>
+    </header>  
+  
+
+    <nav> 
+        <span id="location">YOU ARE HERE: HOME</span>
+
+        <span id="social">
+          <a href="https://www.linkedin.com/in/shinwang1">LINKEDIN</a>
+          <a href="https://www.instagram.com/taperfyco/">INSTAGRAM</a>
+          <a href="https://twitter.com/xinanagans">TWITTER</a>
+          <a href="#">RSS</a>
+          <a href="mailto:shinwang3@gmail.com" target="_top">EMAIL</a>
+        </span>
+        <form>
+          Search:<input type="text" name="searchbox">
+        </form>
+    </nav>
+  
+
     <aside>
       <img src="imgs/profile_xw.jpg">
       <p>About Me</p>
       <p>Placeholder for self introduction.</p>
     </aside>
 
-    <section>
-      <img src="imgs/GitHub.jpg">
+    <article>
+      <section>
+        <img src="imgs/GitHub.jpg">
+      </section>
 
       <br>
       <div>
@@ -48,8 +61,9 @@
         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
       </div>
 
-    </section>
+    </article>
   </body>
+
 
   <footer>
     e-mail: <a href="mailto:shinwang3@gmail.com" target="_top">shinwang3@gmail.com</a>
