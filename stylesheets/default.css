@@ -3,7 +3,6 @@ html {
 }
 
 header {
-	
 	padding-top: 0px;
 }
 
@@ -19,6 +18,8 @@ header {
 	width: 100%;
     padding-top: 10px;
     padding-bottom: 5px;
+    font-size: 20px;
+	font-family: helvetica;
 }
 
 #short-link {
@@ -31,19 +32,19 @@ header {
 }
 
 #box1 {
-	width: 150px;
+	width: 180px;
 }
 
 #box2 {
-	width: 150px;
+	width: 180px;
 }
 
 #box3 {
-	width: 150px;
+	width: 180px;
 }
 
 #box4 {
-	width: 150px;
+	width: 180px;
 }
 
 nav {
@@ -52,6 +53,8 @@ nav {
 	width: 100%;
 	display: inline-block;
 	border-bottom: black;
+	font-size: 16px;
+	font-family: helvetica;
 }
 
 #location {
