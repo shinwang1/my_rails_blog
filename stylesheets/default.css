@@ -75,15 +75,15 @@ form {
 aside {
 	background-color: green;
 	display: inline-block;
-	float: left;
-	width: 20%;
+	float: right;
+	width: 80%;
 	margin-top: 20px;
 }
 article {
 	margin-top: 20px;
 	display: inline-block;
-	float: right;
-	width: 80%;
+	float: left;
+	width: 20%;
 }
 
 article section{
@@ -97,7 +97,7 @@ footer {
 	display: block;
 	height: 20px;
 	width: 100%;
-	position: fixed;
+	clear: both;
 	bottom: 0;
 	background-color: yellow;
 	margin-left: -8px;
