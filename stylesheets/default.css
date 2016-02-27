@@ -1,0 +1,102 @@
+html {
+	background-color: #f2f2f2;
+}
+
+header {
+	
+	padding-top: 0px;
+}
+
+.logo {
+	height: auto;
+	max-width: 100%;
+	display: block;
+    margin: 0 auto;
+}
+
+.header-a {
+	text-align: center;
+	width: 100%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#short-link {
+	text-align: center;
+}
+
+#short-link div{
+	display: inline-block;
+	text-align: center;
+}
+
+#box1 {
+	width: 150px;
+}
+
+#box2 {
+	width: 150px;
+}
+
+#box3 {
+	width: 150px;
+}
+
+#box4 {
+	width: 150px;
+}
+
+nav {
+	background-color: gray;
+	height: auto;
+	width: 100%;
+	display: inline-block;
+	border-bottom: black;
+}
+
+#location {
+	float: left;
+}
+
+#social {
+	display: inline-block;
+	text-align: center;
+	width: 60%;
+}
+
+form {
+	display: inline-block;
+	float: right;
+}
+
+aside {
+	background-color: green;
+	display: inline-block;
+	float: left;
+	width: 20%;
+	margin-top: 20px;
+}
+article {
+	margin-top: 20px;
+	display: inline-block;
+	float: right;
+	width: 80%;
+}
+
+article section{
+	margin-left: 20px;
+}
+article div{
+	margin-left: 20px;
+}
+
+footer {
+	display: block;
+	height: 20px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background-color: yellow;
+	margin-left: -8px;
+
+}
