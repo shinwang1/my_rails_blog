@@ -1,70 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
     <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
   	<meta charset="UTF-8">
 
-    <title>Shin's Blog</title>
+    <title>Shin's Site</title>
 
   </head>
 
   <body>
 
-    <header>
-      <img class="logo" src="imgs/shinlogo.jpg">
-      <!--<a href="projects/tribute-index.html">Project: Bootstrap</a>-->
-      <div class="header-a">
-        <div id="short-link">
-          <div id="box1"><a href="responsive-design/index.html">Project: Responsive</a></div>
-          <div id="box2"><a href="#">Resume</a></div>
-          <div id="box3"><a href="#">Contact</a></div>
-          <div id="box4"><a href="blog/blog-template.html">Blog</a></div>
+<!--  fixed header  -->
+  <header class="header_fixed">
+    <div class="wrapper clearfix">
+
+      <nav class="clearfix">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header><!--  end fixed header  -->
+
+
+  <!--  start billboard  -->
+  <section class="billboard">
+
+    <!--  hero header  -->
+    <header class="hero_header">
+      <div class="wrapper clearfix">
+
+        <nav class="clearfix">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header><!--  end hero header  -->
+
+    <div class="caption">
+      <h2>hello world</h2>
+    </div>
+
+  </section><!--  end billboard  -->
+
+
+  <!--  start about  -->
+  <section class="about" id="about">
+    <div class="wrapper clearfix">
+      <article>
+        <div class="about_icon">
+          <img src="img/profile.jpg" alt="" title=""/>
         </div>
-        <br>
+        <div class="about_info">
+          <h3 class="about_title">About Me</h3>
+          <p class="about_desc">Product Builder, Story Teller, Tech Enthusiast</p>
+          <p class="about_desc">sajf sadlkfjsld;;lasdf ;lasdkfj ;alsdfkj;alsdf l;askdfjl;s lksdjfl;sajf sadlkfjsld;;lasdf ;lasdkfj ;alsdfkj;alsdf l;askdfjl;slksdjfl;sajf sadlkfjsld;;lasdf ;lasdkfj ;alsdfkj;alsdf l;askdfjl;slksdjfl;sajf sadlkfjsld;;lasdf ;lasdkfj ;alsdfkj;alsdf l;askdfjl;s</p>
+        </div>
+      </article>
+
+    </div>
+  </section><!--  end about  -->
+
+
+  <!--  start portfolio  -->
+  <section class="portfolio clearfix" id="portfolio">
+    <div class="wrapper clearfix">
+      <h2 class="title">Portfolio<span>/  projects * blog * resume</span></h2>
+      <div class="folio_wrapper">
+        <ul class='slides clearfix'>
+          <li>
+            <article>
+              <div class="shadow">
+                <div class="folio_info">
+                  <a href="#">
+                    <h2>Projects</h2>
+                  </a>
+                  <a href="#">
+                    <h3>work and fun</h3>
+                  </a>
+                </div>
+              </div>
+              <a href="#">
+                <div class="folio_img">
+                  <img src="img/folio1.jpg" alt="" title="">
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <div class="shadow">
+                <div class="folio_info">
+                  <a href="#">
+                    <h2>Blog</h2>
+                  </a>
+                  <a href="#">
+                    <h3>thoughts</h3>
+                  </a>
+                </div>
+              </div>
+              <a href="#">
+                <div class="folio_img">
+                  <img src="img/folio2.jpg" alt="" title="">
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <div class="shadow">
+                <div class="folio_info">
+                  <a href="#">
+                    <h2>Resume</h2>
+                  </a>
+                  <a href="#">
+                    <h3>past and present</h3>
+                  </a>
+                </div>
+              </div>
+              <a href="#">
+                <div class="folio_img">
+                  <img src="img/folio3.jpg" alt="" title="">
+                </div>
+              </a>
+            </article>
+          </li>
+
+        </ul>
       </div>
-    </header>  
-  
-
-    <nav> 
-        <span id="location">YOU ARE HERE: HOME</span>
-
-        <span id="social">
-          <a href="https://www.linkedin.com/in/shinwang1">LINKEDIN</a>
-          <a href="https://www.instagram.com/taperfyco/">INSTAGRAM</a>
-          <a href="https://twitter.com/xinanagans">TWITTER</a>
-          <a href="#">RSS</a>
-          <a href="mailto:shinwang3@gmail.com" target="_top">EMAIL</a>
-        </span>
-        <form>
-          Search:<input type="text" name="searchbox">
-        </form>
-    </nav>
-  
-
-    <aside>
-      <img src="imgs/profile_xw.jpg">
-      <p>About Me</p>
-      <p>Placeholder for self introduction.</p>
-    </aside>
-
-    <article>
-      <section>
-        <img src="imgs/GitHub.jpg">
-      </section>
-
-      <br>
-      <div>
-        <p><a href="/blog/git.html">Week 1 Blog Post</a></p>
-        <p><a href="/blog/css-concepts.html">Week 3 Blog Post</a></p>
-      </div>
-
-    </article>
-  </body>
+    </div>
+  </section><!--  end portfolio  -->
 
 
+  <!--  start contact  -->
+  <section class="contact" id="contact">
+    <img src="img/contact_icon.png" alt="" title=""/>
+    <h2 class="title">Say Hello</h2>
+    <hr/>
+    <p class="email">shinwang3@gmail.com</p>
+    <p class="phone">+408 686 9768</p>
+  </section><!--  end contact  -->
+
+
+  <!--  start footer  -->
   <footer>
-    e-mail: <a href="mailto:shinwang3@gmail.com" target="_top">shinwang3@gmail.com</a>
-  </footer>
+    <div class="wrapper clearfix">
+
+      <div class="social">
+        <ul>
+          <li><a href="#">linkedin</a></li>
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer><!--  end footer  -->
+
+</body>
 </html>
