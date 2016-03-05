@@ -55,14 +55,14 @@
         color: #ffffff;
     }
 
-    /* change colours to suit your needs */
+    /* change colors if needed */
     ins {
         background-color:#ff9;
         color:#000;
         text-decoration:none;
     }
 
-    /* change colours to suit your needs */
+    /* change colors if needed */
     mark {
         background-color:#ff9;
         color:#000; 
@@ -84,7 +84,7 @@
         border-spacing:0;
     }
 
-    /* change border colour to suit your needs */
+    /* change colors if needed */
     hr {
         display:block;
         height:1px;
