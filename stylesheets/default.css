@@ -1,4 +1,5 @@
 /*
+
     - fonts
     - General CSS
     - headers
@@ -7,9 +8,12 @@
     - portfolio
     - contact
     - footer
+
 */
-html {
-	background-color: #fff;
+
+/*  General CSS*/
+body{
+    background: #fff;
 }
 
 .wrapper{
@@ -53,12 +57,13 @@ h5, h6          { font-weight: bolder }
 
 
 
-
 /*  header  */
-header {
-	width: 100%;
-  	padding: 20px 0;
-  	background-color: rgba(255,255,255,0.5);
+header{
+  width: 100%;
+  padding: 20px 0;
+  background-color: rgba(255,255,255,0.25);
+  z-index: 3333;
+
 }
 
 header.header_fixed{
@@ -66,16 +71,26 @@ header.header_fixed{
     top: 0;
     left: 0;
     background-color: #3e3d3d;
+
 }
 
 header .clearfix a{
-    color: #797979;
+    color: #b5b5b5;
     font-family: "opensans-regular", arial;
-    font-size: 14px;
+    font-size: 18px;
     text-decoration: none;
     float: right;
-    width: 100px;
+    width: 80px;
+    text-shadow: 0.5px 0.5px #003300;
 }
+
+
+
+
+
+
+
+
 
 /*  billboard  */
 .billboard{
@@ -118,93 +133,206 @@ header .clearfix a{
 
 
 /*  about  */
-.logo {
-	height: auto;
-	max-width: 100%;
-	display: block;
-    margin: 0 auto;
+.about{
+    width: 100%;
+    padding: 100px 0;
 }
 
-.header-a {
-	text-align: center;
-	width: 100%;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    font-size: 20px;
-	font-family: helvetica;
+.about_icon{
+  margin-left: 50%;
+  display: inline;
 }
 
-#short-link {
-	text-align: center;
+.about_info{
+  display: inline-block;
+  margin-top: 0;
+  padding-left: 30px;
+  width: 400px;
+}
+.about article{
+  display: inline-block;
+
 }
 
-#short-link div{
-	display: inline-block;
-	text-align: center;
+.about article p.about_desc{
+    color: #797878;
+    font-family: "opensans-regular", arial;
+    font-size: 14px;
+    line-height: 24px;
 }
 
-#box1 {
-	width: 180px;
+
+
+
+
+
+
+
+
+/*  portfolio  */
+.portfolio{
+    width: 100%;
+    padding: 140px 0;
+    overflow: hidden;
 }
 
-#box2 {
-	width: 180px;
+.title{
+    margin: 0;
+    text-align: center;
+    color: #535353;
+    font-family: "opensans-bold", arial;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-#box3 {
-	width: 180px;
+.title span{
+    color: #797979;
+    font-size: 14px;
+    font-family: "opensans-regular", arial;
+    font-weight: normal;
+    margin-left: 5px;
+    text-transform: lowercase;
 }
 
-#box4 {
-	width: 180px;
+.portfolio .folio_wrapper ul li .shadow{
+    width: 100%;
+    height: 155px;
+    list-style: none;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    position: absolute;
+    z-index: 2222;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+
+    transition:all .2s linear;
+    -webkit-transition:all .2s linear;
+    -moz-transition:all .2s linear;
+    -o-transition:all .2s linear;
 }
 
-nav {
-	background-color: gray;
-	height: auto;
-	width: 100%;
-	display: inline-block;
-	border-bottom: black;
-	font-size: 16px;
-	font-family: helvetica;
+.portfolio .folio_wrapper ul li article:hover .shadow{
+    opacity: 1;
 }
 
-#location {
-	float: left;
+.portfolio .folio_wrapper ul li .folio_info{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    opacity: 0;
+
+    transition:all .2s linear;
+    -webkit-transition:all .2s linear;
+    -moz-transition:all .2s linear;
+    -o-transition:all .2s linear;
 }
 
-#social {
-	display: inline-block;
-	text-align: center;
-	width: 60%;
+.portfolio .folio_wrapper ul li article:hover .folio_info{
+    bottom: 20px;
+    opacity: 1;
 }
 
-form {
-	display: inline-block;
-	float: right;
+.portfolio .folio_wrapper ul li .folio_info a{
+    text-decoration: none;
 }
 
-aside {
-	background-color: green;
-	display: inline-block;
-	float: right;
-	width: 80%;
-	margin-top: 20px;
-}
-article {
-	margin-top: 20px;
-	display: inline-block;
-	float: left;
-	width: 20%;
+.portfolio .folio_wrapper ul li .folio_info a h2{
+    color: #fff;
+    font-family: "opensans-semibold", arial;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
 }
 
-article section{
-	margin-left: 20px;
-}
-article div{
-	margin-left: 20px;
+.portfolio .folio_wrapper ul li .folio_info a h3{
+    color: #fff;
+    font-family: "opensans-regular", arial;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+    margin: 10px 0 0 0;
 }
 
+.portfolio .folio_wrapper ul li .folio_img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1111;
+}
+
+
+
+
+
+
+
+
+
+/*----    portfolio slider  ----*/
+.portfolio .folio_wrapper{
+    margin-top: 100px;
+    overflow-x: visible!important;
+}
+
+.portfolio .folio_wrapper ul li{
+    display: block;
+    width: 313px;
+    height: 310px;
+    list-style: none;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin-right: 80px;
+}
+
+.portfolio .folio_wrapper ul li:last-child{
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+/*  contact  */
+.contact{
+    padding: 140px 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.contact .title{
+    font-style: 26px;
+    margin-top: 40px;
+}
+
+.contact hr{
+    display: block;
+    border: 0;
+    width: 100px;
+    height: 1px;
+    background: #797979;
+    margin: 60px auto;
+}
+
+.contact .email,
+.contact .phone{
+    color: #4badcf;
+    font-family: "opensans-semibold", arial;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.contact .email{
+    margin-bottom: 40px;
+}
 
 
 
@@ -245,7 +373,7 @@ footer .social ul li:last-child{
 footer .social ul li a{
     color: #b5b5b5;
     font-family: "opensans-regular", arial;
-    font-size: 14px;
+    font-size: 18px;
     text-decoration: none;
 
     transition:all .2s linear;
