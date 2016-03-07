@@ -1,26 +1,7 @@
 
 
-article {
-	background-color: #ffffe6;
-	font-size: 26px;
-	font-family: helvetica;
+#blog-content {
+	margin-top: 20px;
 }
 
-#content {
-	width: 80%;
-	float: left;
-	background-color: #ffffe6;
-	font-size: 26px;
-	font-family: helvetica;
-}
-
-aside {
-	width: 20%;
-	float: right;
-}
-
-img {
-	max-width: 50%;
-	height: auto;
-}
 
