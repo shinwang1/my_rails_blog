@@ -11,3 +11,14 @@
 	padding-left: 40px;
 	padding-right: 40px;
 }
+
+.rubyhtml {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-left: 240px;
+	margin-right: 240px;
+}
+
+.source-link {
+	color: #4d94ff;
+}
