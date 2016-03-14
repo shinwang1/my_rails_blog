@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/reset.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+        <meta charset="UTF-8">
+
+    <title>Enumerable Methods</title>
+
+  </head>
+
+  <body>
+    <!--  fixed header  -->
+    <header class="header_fixed">
+      <div class="wrapper clearfix">
+
+        <nav class="clearfix">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="blog-template.html">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--  end fixed header  -->
+
+    <section class="portfolio clearfix" id="portfolio">
+      <div class="wrapper clearfix">
+        <h2 class="title">Ruby: Enumerable Methods<span>/ Mar 13, 2016</span></h2>
+          <div class="blog-content">
+            <h4>A way to search, sort, and more</h4>
+              <h5>
+              <p class="p1">From my understanding of iterations, enumerables are similar in that these set of methods allow an action to be performed on every object in the hash or array argument. More specifically, let's compare with a while loop of an array. For a while loop, you are iterating through each object within the array with a counter. As the counter matches the index with the length of the array, some logic is performed on each object. For an enumerable, you don't need a counter or a loop. The method called upon the array knows to inherently perform the logic specified to each object within the array.</p>
+              
+              <p class="p-title">Example Enumerable #map:</p>
+                <p class="p1">
+                  The .map method take an input of an enumerable object and a logic block. Let's take an array for our example.The enumerable object reprsents the place holder of each object within an array. The logic block can be anything that the user specify to be performed on every object within the array. The return output is an new array of values different from the original array. Note, .map is a non-destructive method. The original array still holds the same values. However, if you were to use the destructive method of .map!, then the original array will change.<a class="source-link" href="http://markup.su/highlighter/">Code Embedding Source</a>
+                </p>
+                <pre class="rubyhtml" style="background:#000;color:#f8f8f8">array <span style="color:#e28964">=</span> [<span style="color:#3387cc">1</span>,<span style="color:#3387cc">2</span>,<span style="color:#3387cc">3</span>]
+
+                array.map {|<span style="color:#3e87e3">x</span>| p x<span style="color:#e28964">+</span><span style="color:#3387cc">1</span>}
+
+                <span style="color:#3e87e3">Results</span>: [<span style="color:#3387cc">2</span>,<span style="color:#3387cc">3</span>,<span style="color:#3387cc">4</span>]</pre>
+              </h5>
+          </div>
+      </div>
+    </section>
+
+    <!--  end portfolio blog -->
+
+    <!--  start footer  -->
+    <footer>
+      <div class="wrapper clearfix">
+
+        <div class="social">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/shinwang1"><img src="../imgs/link38px.png" alt="" title=""/></a></li>
+            <li><a href="https://twitter.com/xinanagans"><img src="../imgs/Twitter_logo_blue.png" alt="" title=""/></a></li>
+            <li><a href="https://github.com/shinwang1"><img src="../imgs/GitHub-Mark-32px.png" alt="" title=""/></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer><!--  end footer  -->
+  </body>
+
+</html>
