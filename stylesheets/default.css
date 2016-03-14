@@ -244,6 +244,7 @@ header .clearfix a{
     font-size: 16px;
     font-weight: bold;
     margin: 0;
+    text-shadow: 1px 1px #000000;
 }
 
 .portfolio .folio_wrapper ul li .folio_info a h3{
@@ -253,6 +254,7 @@ header .clearfix a{
     font-style: italic;
     font-weight: normal;
     margin: 10px 0 0 0;
+    text-shadow: 0.5px 0.5px #000000;
 }
 
 .portfolio .folio_wrapper ul li .folio_img img{
@@ -284,7 +286,8 @@ header .clearfix a{
     position: relative;
     float: left;
     overflow: hidden;
-    margin-right: 80px;
+    margin-right: 50px;
+    margin-top: 50px;
 }
 
 .portfolio .folio_wrapper ul li:last-child{
