@@ -360,6 +360,7 @@ header .clearfix a{
 footer{
     width: 100%;
     padding: 60px 0;
+    position: relative;
     background: #3e3d3d;
 }
 
