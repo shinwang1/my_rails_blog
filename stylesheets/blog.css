@@ -19,6 +19,7 @@
 	margin-bottom: 3px;
 	margin-left: 220px;
 	margin-right: 220px;
+	padding-left: 10px;
 }
 
 .p1 {
@@ -27,6 +28,21 @@
 
 .p-title {
 	margin-top: 10px;
+}
+
+.ruby-hash {
+	width: 400px;
+	float: left;
+	margin-left: 100px;
+	padding-left: 10px;
+
+}
+
+.js-object {
+	width: 400px;
+	float: right;
+	margin-right: 100px;
+	padding-left: 10px;
 }
 
 .source-link {
