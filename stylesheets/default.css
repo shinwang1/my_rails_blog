@@ -95,8 +95,9 @@ header .clearfix a{
 /*  billboard  */
 .billboard{
     width: 100%;
-    height: 620px;
-    background: url('../imgs/hero.jpg') no-repeat;
+    max-width: 1920px;
+    height: 650px;
+    background: url('../imgs/hero3.jpg') no-repeat;
     background-position: cover;
     -webkit-background-position: cover;
     -moz-background-position: cover;
@@ -113,7 +114,7 @@ header .clearfix a{
     font-weight: lighter;
     margin: 0;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 250px;
     text-shadow: 1px 1px #fffff0;
 }
 
