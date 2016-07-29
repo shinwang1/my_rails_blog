@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shin Wang - Technology Product Enthusiast</title>
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header id="main_navigation" class="clearfix">
+    <%= link_to "Shin Wang", root_path, class: "name" %>
+    <nav>
+      <%= link_to "Articles", posts_path %>
+      
+    </nav>
+  </header>
+
+  <%= yield %>
+
+  <footer id="main_footer">
+    <p class="copyright">Special thanks to <a href="https://mackenziechild.me/">Mackenzie Child</a> for the project template.</p>
+    <nav>
+      <a href="https://twitter.com/xinanagans" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/shinwang1" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a href="http://github.com/shinwang1" target="_blank"><i class="fa fa-github"></i></a>
+    </nav>
+  </footer>
+
+</body>
+</html>
