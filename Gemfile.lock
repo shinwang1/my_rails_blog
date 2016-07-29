@@ -164,8 +164,8 @@ DEPENDENCIES
   pg (~> 0.18.4)
   pygments.rb (~> 0.6.3)
   rails (= 4.2.6)
-  redcarpet (~> 3.3, >= 3.3.4)
   rails_12factor
+  redcarpet (~> 3.3, >= 3.3.4)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
