@@ -1,0 +1,14 @@
+<h1 id="page_title">My Projects</h1>
+
+<div id="posts_wrapper" class="skinny_wrapper">
+  <% @projects.each do |project| %>
+    <div class="post">
+      
+      <h2><a href="#"><%= link_to project.title, project %></a></h2>
+      <img src="<%= project.image %>" style="width:280px;height:210px;">
+      <hr>
+    </div>
+  <% end %>
+</div>
+
+<%= will_paginate @projects %>
