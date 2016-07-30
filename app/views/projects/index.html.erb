@@ -5,7 +5,10 @@
     <div class="post">
       
       <h2><a href="#"><%= link_to project.title, project %></a></h2>
+      <img src="<%= project.image %>" style="width:280px;height:210px;">
       <hr>
     </div>
   <% end %>
 </div>
+
+<%= will_paginate @projects %>
