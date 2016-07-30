@@ -9,13 +9,18 @@
     <%= markdown @project.description %>
   </div>
 
+  <% if user_signed_in? %>
+    <div id="admin_links">
+      <%= link_to "Edit", edit_project_path(@project) %>
+      <%= link_to "Delete", project_path(@project), method: :delete, data: { confirm: "Are you sure?" } %>
+    </div>
+  <% end %>
+
   <hr>
 
   <div class="button_wrapper">
     <a href="<%= @project.link %>" class="project_button" target="_blank">Visit <%= @project.title %></a>
   </div>
 
-  <%= link_to "Edit", edit_project_path(@project) %>
-  <%= link_to "Delete", project_path(@project), method: :delete, data: { confirm: "Are you sure?" } %>
   <hr>
 </div>

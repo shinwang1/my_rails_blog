@@ -7,7 +7,7 @@
     <p></p>
   </div>
   <div class="col-2 homepage_content">
-    <h2>Stuff I've Written</h2>
+    <h2>Blogs I've Written</h2>
     <hr>
     <% @posts.each do |post| %>
       <h3><a href="#"><%= link_to post.title, post %></a></h3>
@@ -17,7 +17,7 @@
 
   </div>
   <div class="col-3 homepage_content">
-    <h2>Stuff I've Built</h2>
+    <h2>Projects I've Built</h2>
     <hr>
     <% @projects.each do |project| %>
       <h3><a href="#"><%= link_to project.title, project %></a></h3>
