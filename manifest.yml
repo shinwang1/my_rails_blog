@@ -3,4 +3,5 @@ applications:
 - name: blogwebapp
   random-route: true
   memory: 256M
+  buildpack: https://github.com/cloudfoundry/ruby-buildpack
   command: bundle exec rake db:migrate && bundle exec rails s -p $PORT
