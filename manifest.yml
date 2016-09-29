@@ -3,3 +3,4 @@ applications:
 - name: blogwebapp
   random-route: true
   memory: 256M
+  command: bundle exec rake db:migrate && bundle exec rails s -p $PORT
